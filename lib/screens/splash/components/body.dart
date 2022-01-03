@@ -1,5 +1,6 @@
 import 'package:app_shop/components/default_button.dart';
 import 'package:app_shop/constanstes.dart';
+import 'package:app_shop/screens/sing_in/sing_in_screen.dart';
 import 'package:app_shop/screens/splash/components/splash_component.dart';
 import 'package:app_shop/size_config.dart';
 
@@ -67,7 +68,9 @@ class _BodyState extends State<Body> {
                     Spacer(flex: 3),
                     DefaultButton(
                       text: "Continuar",
-                      press: () {},
+                      press: () {
+                        Navigator.pushNamed(context, SingInScreen.routeName);
+                      },
                     ),
                     Spacer(),
                   ],

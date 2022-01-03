@@ -88,7 +88,7 @@ class SingFormStateState extends State<SingFormState> {
       validator: (value){
         if(value!.isEmpty){
           setState(() {
-            errors.add("Por favor ingresa tu email")
+            errors.add("Por favor ingresa tu email");
           });
         }
         return null;
